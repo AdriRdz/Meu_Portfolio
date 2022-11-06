@@ -44,3 +44,48 @@ nav a {
 nav a:hover {
     color: rgb(135, 134, 134);
 }
+
+.cara {
+    border-radius: 500px;
+    height: 200px;
+}
+
+.um {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(99vh - 63px);
+    background-color: rgb(19, 18, 18);
+    color: white;
+    /* padding-top: 10%; */
+}
+
+.caixa-central {
+    margin-top: 7%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 50%;
+    background-image: linear-gradient(135deg, #2e262e, #290a52, #300752, #1c1c6e, #1b2c4e, #1f1d86, #3c29e4, #092164);
+}
+
+.caixa-cara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-image: linear-gradient(135deg, #2e262e, #290a52, #300752, #1c1c6e, #1b2c4e, #1f1d86, #3c29e4, #092164);
+}
+
+.caixa-presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
