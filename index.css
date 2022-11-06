@@ -149,4 +149,30 @@ nav a:hover {
     width: 100%;
 }
 
+.card a,
+footer a {
+    color: white;
+}
+
+footer {
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #F2F2F2;
+    height: 250px;
+}
+
+.red-social {
+    height: 60px;
+    background-color: #1B1B1B;
+    border-radius: 10px;
+}
+
+.contato {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
 
