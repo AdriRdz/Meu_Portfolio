@@ -89,7 +89,7 @@
                     Durante o trabalho de campo fui supervisora de campo, atualmente trabalho de ajudante de pesquisa.
                     <br> 08/2021 - Atualmente.
                 </p>
-                <form action="https://gcrf-reghid.com/">
+                <form action="https://gcrf-reghid.com/" target="_blank">
                     <button>Ver</button>
                 </form>
             </div>
@@ -101,7 +101,7 @@
                     Trabalho com entrevistas telefonicas a puérperas venezuelanas que moram em Boa Vista. <br> 07/2022 -
                     Atualmente.
                 </p>
-                <form action="https://nascernobrasil.ensp.fiocruz.br/">
+                <form action="https://nascernobrasil.ensp.fiocruz.br/" target="_blank">
                     <button>Ver</button>
                 </form>
             </div>
@@ -129,7 +129,7 @@
             </a>
         </div>
         <section class="contato__final">
-            <div class="conteiner-form">
+            <div class="conteiner-formas">
                 <div class="info-form"><a href="https://web.whatsapp.com/"><i class="fa fa-phone"></i>+55 (92)
                         98819-9878</a>
                     <a
@@ -138,15 +138,39 @@
                     <a href="https://www.google.com/maps/@-3.0651745,-59.9906682,12.26z?hl=es"><i
                             class="fa-solid fa-location-dot"></i>Manaus, Brasil</a>
                 </div>
-                <form action="#" autocomplete="off"><input type="text" name="Nome" placeholder="Digite seu nome"
-                        class="campo">
-                    <input type="email" name="email" placeholder="Digete seu e-mail" class="campo">
-                    <textarea name="Mensagem" placeholder="Digite sua mensagem"></textarea>
-                    <input type="submit" name="enviar" value="enviar mensagem" class="btn-enviar">
-                </form>
+                <div class="container">
+                    <form class="formulario">
+                        <div class="input-group">
+                            <label class="label">Nome Completo:</label>
+                            <input type="text" placeholder="Digite seu Nome" id="contact-name" onkeyup="validateName()">
+                            <span id="name-error"></span>
+
+                        </div>
+
+                        <div class="input-group">
+                            <label class="label">E-mail:</label>
+                            <input type="email" placeholder="Digite seu E-mail" id="contact-email"
+                                onkeyup="validateEmail()">
+                            <span id="email-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="label">Mesagem:</label>
+                            <textarea rows="5" placeholder="Digite sua Mensagem" id="contact-message"
+                                onkeyup="validateMessage()"></textarea>
+                            <span id="message-error"></span>
+                        </div>
+
+                        <button onclick="return validateForm()">Enviar</button>
+                        <span id="submit-error"></span>
+                    </form>
+
+
+                </div>
             </div>
         </section>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
